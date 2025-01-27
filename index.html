@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+  </style>
+
+  <!-- Importing my CSS and JS files -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Logo  -->
+    <img src="./images/logo-bookmark.svg"
+      alt="Bookmark logo that have a blue circle with a white question mark inside of it" width="30" height="30"
+      class="header__logo">
+
+    <!-- Burger Menu Button  -->
+    <button class="header__burgerBtn">
+      <img src="./images/icon-hamburger.svg" alt="3 horitzontal lines with a dark blue color" width="30" height="30"
+        class="header__burgerBtn-image">
+    </button>
+
+    <!-- NavBar  -->
+    <div class="header__navbar">
+      <div class="header__navBar-top">
+        <div class="header__navBar-top-logo">
+          <!-- NavBar Logo  -->
+          <img src="./images/logo-bookmark-navbar.svg"
+            alt="Bookmark logo that have a qhite circle with a blue question mark inside of it" width="30" height="30"
+            class="header__navbar-logo">
+
+          <!-- Close Button  -->
+          <button class="header__navbar-closeBtn">
+            <img src="./images/icon-close.svg" alt="A white X button" width="30" height="30"
+              class="header__navbar-closeBtn-image">
+          </button>
+        </div>
+        <!-- NavBar Nav  -->
+        <nav class="header__navbar-nav">
+          <ul class="header__navbar-nav-list">
+            <li class="header__navbar-nav-list-item">
+              <a href="#" class="header__navbar-nav-list-item-link">FEATURES</a>
+            </li>
+            <li class="header__navbar-nav-list-item">
+              <a href="#" class="header__navbar-nav-list-item-link">PRICING</a>
+            </li>
+            <li class="header__navbar-nav-list-item --last">
+              <a href="#" class="header__navbar-nav-list-item-link">CONTACT</a>
+            </li>
+            <li class="header__navbar-nav-list-login">
+              <a href="#" class="header__navbar-nav-list-item-link login">LOGIN</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Social Icons  -->
+      <div class="header__navbar-social">
+        <a href="#" class="header__navbar-social-link">
+          <img src="./images/icon-facebook.svg" alt="Facebook logo" width="30" height="30"
+            class="header__navbar-social-link-image">
+        </a>
+        <a href="#" class="header__navbar-social-link">
+          <img src="./images/icon-twitter.svg" alt="Twitter logo" width="30" height="30"
+            class="header__navbar-social-link-image">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- The Hero Section  -->
+    <section class="hero">
+      <!-- Hero Container Image  -->
+      <div class="hero__containerImg">
+        <img src="./images/illustration-hero.svg" alt="A tablet with a bookmark page open" width="200" height="100"
+          class="hero__containerImg-image">
+      </div>
+
+      <!-- Hero Text  -->
+      <div class="hero__text">
+        <h1 class="hero__text-title">A Simple Bookmark Manager</h1>
+        <p class="hero__text-paragraph">A clean and simple interface to organize your favourite websites. Open a new
+          browser tab and see your sites load instantly. Try it for free.</p>
+      </div>
+
+      <!-- Hero Buttons  -->
+      <div class="hero__btns">
+        <button class="hero__btns-button --chrome">Get it on Chrome</button>
+        <button class="hero__btns-button --firefox">Get it on Firefox</button>
+      </div>
+    </section>
+
+    <!-- The Features Section  -->
+    <section class="features">
+      <!-- Title and Paragraph  -->
+      <div class="features__text">
+        <h2 class="features__text-- text-title">Features</h2>
+        <p class="features__text-- text-paragraph">Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+      </div>
+
+      <!-- List Buttons  -->
+      <div class="features__list">
+        <button class="features__list-button --first --active" id="features-button-1">Simple Bookmarking</button>
+        <button class="features__list-button" id="features-button-2">Speedy Searching</button>
+        <button class="features__list-button --third" id="features-button-3">Easy Sharing</button>
+      </div>
+
+      <!-- The text for the buttons  -->
+      <div class="features__info">
+        <div class="features__info-containerImg">
+          <img src="./images/illustration-features-tab-1.svg" alt="Display of a web with the Bookmark web open"
+            width="200" height="100" class="features__info-containerImg-image">
+        </div>
+        <div class="features__info-text">
+          <h2 class="features__info-- text-title" id="features__text-title">Bookmark in one click</h2>
+          <p class="features__info-- text-paragraph" id="features__text-paragraph">Organize your bookmarks however you like. Our simple drag-and-drop
+            interface
+            gives you complete control over how you manage your favourite sites.</p>
+          <button class="features__info-button">More info</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- The extension section  -->
+    <section class="extension">
+      <div class="extension__text">
+        <h2 class="extension__text-- text-title">Download the extension</h2>
+        <p class="extension__text-- text-paragraph">We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve
+          got a favourite you’d like us to prioritize.</p>
+      </div>
+
+      <!-- The extension cards -->
+      <div class="extension__container">
+        <div class="extension__card">
+          <img src="./images/logo-chrome.svg" alt="Chrome logo" width="50" height="50" class="extension__card-image">
+
+          <div class="extension__card-text">
+            <h3 class="extension__card-text-title">Add to Chrome</h3>
+            <p class="extension__card-text-paragraph">Minimum version 62</p>
+          </div>
+
+          <img src="./images/bg-dots.svg" alt="Background dots" width="100" height="20" class="extension__card-dots">
+
+          <button class="extension__card-button">Add & Install Extension</button>
+        </div>
+
+        <div class="extension__card firefox">
+          <img src="./images/logo-firefox.svg" alt="Firefox logo" width="50" height="50" class="extension__card-image">
+
+          <div class="extension__card-text">
+            <h3 class="extension__card-text-title">Add to Firefox</h3>
+            <p class="extension__card-text-paragraph">Minimum version 55</p>
+          </div>
+
+          <img src="./images/bg-dots.svg" alt="Background dots" width="100" height="20" class="extension__card-dots">
+
+          <button class="extension__card-button">Add & Install Extension</button>
+        </div>
+
+        <div class="extension__card opera">
+          <img src="./images/logo-opera.svg" alt="Opera logo" width="50" height="50" class="extension__card-image">
+
+          <div class="extension__card-text">
+            <h3 class="extension__card-text-title">Add to Opera</h3>
+            <p class="extension__card-text-paragraph">Minimum version 46</p>
+          </div>
+
+          <img src="./images/bg-dots.svg" alt="Background dots" width="100" height="20" class="extension__card-dots">
+
+          <button class="extension__card-button">Add & Install Extension</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="faq">
+      <div class="faq__text">
+        <h2 class="faq__text text-title">Frequently Asked Questions</h2>
+        <p class="faq__text text-paragraph">Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.</p>
+      </div>
+
+      <!-- The FAQ accordion -->
+      <div class="faq__accordion">
+        <div class="faq__accordion-item">
+          <div class="faq__accordion-btn">
+            <h3 class="faq__accordion-question">What is Bookmark?</h3>
+            <img src="./images/icon-arrow.svg" alt="Icon arrow in blue" width="20" height="20"
+              class="faq__accordion-icon">
+          </div>
+
+          <div class="faq__accordion-content">
+            <p class="faq__accordion-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+          </div>
+        </div>
+
+        <div class="faq__accordion-item">
+          <div class="faq__accordion-btn">
+            <h3 class="faq__accordion-question">How can I request a new browser?</h3>
+            <img src="./images/icon-arrow.svg" alt="Icon arrow in blue" width="20" height="20"
+              class="faq__accordion-icon">
+          </div>
+
+          <div class="faq__accordion-content">
+            <p class="faq__accordion-answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula.
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+          </div>
+        </div>
+
+        <div class="faq__accordion-item">
+          <div class="faq__accordion-btn">
+            <h3 class="faq__accordion-question">Is there a mobile app?</h3>
+            <img src="./images/icon-arrow.svg" alt="Icon arrow in blue" width="20" height="20"
+              class="faq__accordion-icon">
+          </div>
+
+          <div class="faq__accordion-content">
+            <p class="faq__accordion-answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus
+              vestibulum dolor, ut condimentum
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.</p>
+          </div>
+        </div>
+
+        <div class="faq__accordion-item">
+          <div class="faq__accordion-btn">
+            <h3 class="faq__accordion-question">What about other Chromium browsers?</h3>
+            <img src="./images/icon-arrow.svg" alt="Icon arrow in blue" width="20" height="20"
+              class="faq__accordion-icon">
+          </div>
+
+          <div class="faq__accordion-content">
+            <p class="faq__accordion-answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
+              euismod dui. Aliquam
+              vitae neque eget nisl gravida pellentesque non ut velit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- The FAQ button -->
+      <button class="faq__button">More Info</button>
+    </section>
+
+    <!-- The join us section  -->
+    <section class="joinUs">
+      <div class="joinUs__text">
+        <p class="joinUs__text-text-paragraph">35,000+ ALREADY JOINED</p>
+        <h2 class="joinUs__text-text-title">Stay up-to-date with what we’re doing</h2>
+      </div>
+
+      <div class="joinUs__form">
+        <div class="joinUs__form-input">
+          <input type="email" placeholder="Enter your email address" class="joinUs__form-inputEmail">
+          <img src="./images/icon-error.svg" alt="Icon of an exclamation in a red circle" width="10" height="10"
+            class="joinUs__form-error-img">
+          <p class="joinUs__form-error">Whoops, make sure it's an email</p>
+        </div>
+
+        <button class="joinUs__form-button">Contact us</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer logo -->
+    <img src="./images/logo-bookmark-footer.svg"
+      alt="Bookmark logo that have a blue circle with a white question mark inside of it" width="30" height="30"
+      class="footer__logo">
+
+    <!-- Footer navBar -->
+    <nav class="footer__navBar">
+      <ul class="footer__navBar-list">
+        <li class="footer__navBar-item">
+          <a href="#" class="footer__navBar-link">FEATURES</a>
+        </li>
+
+        <li class="footer__navBar-item">
+          <a href="#" class="footer__navBar-link">PRICING</a>
+        </li>
+
+        <li class="footer__navBar-item">
+          <a href="#" class="footer__navBar-link">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Social Icons  -->
+    <div class="footer__navBar-social">
+      <a href="#" class="footer__navBar-social-link">
+        <img src="./images/icon-facebook.svg" alt="Facebook logo" width="30" height="30"
+          class="footer__navBar-social-link-image">
+      </a>
+
+      <a href="#" class="footer__navBar-social-link">
+        <img src="./images/icon-twitter.svg" alt="Twitter logo" width="30" height="30"
+          class="footer__navBar-social-link-image">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
